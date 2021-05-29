@@ -14,8 +14,8 @@ The design of the software is based to some functional requirements that are cal
 The application has also automated tests for checking the functionality of the system with the [JUnit 5](https://junit.org/junit5/).
 
 # Java version
-The system was created using the java version jdk-14.0
-The application that was used is eclipse for java developers
+The system was created using the [java version](https://www.oracle.com/java/technologies/javase/jdk14-archive-downloads.html) jdk-14.0
+The application that was used is [eclipse](https://www.eclipse.org/downloads/) for java developers
 
 # External Resources
 Apart from the main libraries, it has been also used the [apache poi 5.0.0](https://poi.apache.org/) library for opening the documents as .jar files.
