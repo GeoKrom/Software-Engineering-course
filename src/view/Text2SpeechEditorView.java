@@ -158,7 +158,7 @@ public class Text2SpeechEditorView {
 			File thisFile = fileChooser.getSelectedFile();
 			absolutePath = thisFile.getAbsolutePath();
 			currDoc = new Document(null , thisFile.getAbsolutePath(), encryType);
-			
+
 			CommandsFactory commFactory = new CommandsFactory(currDoc);
 			OpenDocument	openDoc = (OpenDocument) commFactory.createCommand("openDocument");
 			openDoc.actionPerformed(arg0);
@@ -682,6 +682,7 @@ public class Text2SpeechEditorView {
 		else if (doc.toString().startsWith("commands.SoundS")) {
 				Document copy = new Document(currDoc);
 				SoundSettings op =new SoundSettings((SoundSettings) doc);
+				System.out.println(op.getSettings_sound()+"edw eisaiiii");
 				CommandsFactory commFactory = new CommandsFactory(copy.getDocument(),arg0);
 				ActionListener replayDoc = (ReplayManager) commFactory.createCommand("replay");
 				((ReplayManager) replayDoc).addcommand(op.getSoundSettingsDocument());
@@ -692,7 +693,7 @@ public class Text2SpeechEditorView {
 	
 	public static void rep(ActionEvent arg0,JTextArea ta) throws InterruptedException {
 		for (int i=0; i<replay_key.size(); i++) {
-			//System.out.println(((ReplayManager)replay_key.get(i)).getList_actions().get(0).toString());
+			System.out.println(((ReplayManager)replay_key.get(i)).getList_actions().get(0).toString());
 			if (((ReplayManager)replay_key.get(i)).getList_actions().get(0).toString().startsWith("commands.OpenD") || ((ReplayManager)replay_key.get(i)).getList_actions().get(0).toString().startsWith("commands.EditD") ) {
 				clearTextArea(ta);				
 				if (((ReplayManager)replay_key.get(i)).getList_actions().get(0).toString().startsWith("commands.OpenD")) {

@@ -50,14 +50,14 @@ public class DocumentReaderFactory {
 			return  readerAtbashDecorator=new ReaderAtbashDecorator(exelReader);
 		}
 		else {
-			System.out.println("Error telos arxeio .xlsx or docx ή λαθος κωδικοποίηση!!");
+			System.out.println("Error end of file .xlsx or docx or wrong encryption type!!");
 			
 			return null;
 		}
 	
 	}else {
 		
-		System.out.println("Error:EncodeType ήταν null ή κενό '' ή το path του αρχείου ήταν null ή κενό" +" ");
+		System.out.println("Error:EncodeType was null empty or file path was null or empty" +" ");
 		
 		return null;
 	}

@@ -6,6 +6,4 @@ public interface DocumentWriter {
 	
 	public void write(ArrayList<String> list);
 
-	
-
 }
