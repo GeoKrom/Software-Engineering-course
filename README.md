@@ -1,4 +1,4 @@
-# Software-Engineering
+# Software Engineering
 
 Semester project for the course CSE/MYY803 - Software Engineering, Department of Computer Science and Engineering.
 
