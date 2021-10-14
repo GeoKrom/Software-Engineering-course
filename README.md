@@ -19,3 +19,11 @@ The application that was used is [eclipse](https://www.eclipse.org/downloads/) f
 
 # External Resources
 Apart from the main libraries, it has been also used the [apache poi 5.0.0](https://poi.apache.org/) library for opening the documents as .jar files.
+
+# Authors
+
+[Lambros Vlaxopoulos](https://github.com/lamprosvlax13)
+
+[George Krommydas](https://github.com/GeoKrom)
+
+[Panoraia Tsiami](https://github.com/panwraia)
